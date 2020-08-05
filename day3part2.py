@@ -3,8 +3,7 @@ from sys import argv
 script, input_file = argv
 
 open_file = open(input_file)
-# directions = open_file.read()
-directions = '^v'
+directions = open_file.read()
 houses = [(0,0)]
 robot_houses = [(0,0)]
 i = 0
@@ -38,5 +37,4 @@ for house in robot_houses:
 for house in houses:
     if house not in unique_house:
         unique_house.append(house)
-# print(unique_house)
 print("part 2:", len(unique_house))
