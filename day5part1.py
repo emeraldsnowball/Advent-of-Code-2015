@@ -5,7 +5,6 @@ script, input_file = argv
 open_file = open(input_file)
 txt = open_file.read().split()
 nice_string = []
-j=0
 for line in txt:
     count_vowel = 0
     double_letter = 0
